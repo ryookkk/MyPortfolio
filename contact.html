@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
 
     <title>RYOK</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
 
   <body>
@@ -432,6 +433,20 @@
                           <!-- form field end -->
                           <!-- form field -->
                           <div class="art-form-field">
+                            <!-- email input -->
+                            <input
+                              id="subject"
+                              name="subject"
+                              class="art-input"
+                              placeholder="Subject"
+                              required
+                            />
+                            <!-- label -->
+                            <label for="subject"><i class="fas fa-link"></i></label>
+                          </div>
+                          <!-- form field end -->
+                          <!-- form field -->
+                          <div class="art-form-field">
                             <!-- message textarea -->
                             <textarea
                               id="message"
@@ -586,10 +601,7 @@
                       </ul>
                       <!-- sub menu end -->
                     </li>
-                    <!-- menu item -->
-                    <li class="menu-item">
-                      <a href="history.html">History</a>
-                    </li>
+                    
                     <!-- menu item -->
                     <li class="menu-item current-menu-item">
                       <a href="contact.html">Contact</a>
@@ -652,6 +664,8 @@
     </div>
     <!-- app end -->
 
+    <!-- email js -->
+    <script src="js/email.js"></script>
     <!-- jquery js -->
     <script src="js/plugins/jquery.min.js"></script>
     <!-- anime js -->
